@@ -15,7 +15,7 @@ spec:
       containers:
         - name: minha-app
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           env:
